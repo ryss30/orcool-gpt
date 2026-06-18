@@ -129,6 +129,25 @@
   .qbox .ql{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--green);margin-bottom:7px}
   .qbox p{color:#EDEBE8;font-size:15px;margin:0;padding-right:64px;font-family:var(--serif);font-style:italic}
   .setuppre{background:#0c0c0c;border:1px solid #232323;border-radius:10px;padding:16px 18px;color:#EDEBE8;font-family:var(--mono);font-size:12.5px;line-height:1.6;white-space:pre-wrap;overflow-x:auto;margin:0}
+  /* winner exhibit (ChatGPT-conversation) */
+  .wgpt{max-width:720px;margin:26px auto 0;background:#fff;border:1px solid #e6e6e6;border-radius:18px;box-shadow:0 14px 44px rgba(0,0,0,.08);overflow:hidden;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#0d0d0d;text-align:left}
+  .wbar{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid #ececec;font-weight:600;font-size:15px;color:#0d0d0d}
+  .wbar .mdl{color:#8e8e8e;font-weight:400;font-size:13px}
+  .wthread{padding:20px 22px}
+  .wu{display:flex;justify-content:flex-end;margin-bottom:22px}
+  .wu .wbub{background:#f4f4f4;border-radius:18px;padding:12px 16px;font-size:15.5px;line-height:1.5;max-width:82%;color:#0d0d0d}
+  .wa{display:flex;gap:12px}
+  .wa .wav{width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid #e6e6e6;flex:0 0 30px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .wa .wav img{width:100%;height:100%;object-fit:contain;padding:3px}
+  .wa .wbody{flex:1;min-width:0}
+  .wa .who{font-size:12px;color:#8e8e8e;margin-bottom:6px}
+  .wa h4{font-size:15.5px;font-weight:700;margin:14px 0 3px;color:#0d0d0d}
+  .wa h4:first-of-type{margin-top:0}
+  .wa .wbody p{font-size:15.5px;line-height:1.6;margin:0 0 4px;color:#0d0d0d}
+  .wa blockquote{border-left:3px solid #10a37f;background:#f6fbf9;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;font-size:15.5px;line-height:1.5;color:#0d0d0d}
+  .wa ul{margin:4px 0 4px 20px}
+  .wa li{margin:4px 0;font-size:15.5px;line-height:1.6}
+  .wa em{color:#444}
   /* example exhibit — high-fidelity Slack message */
   .qask{max-width:680px;margin:30px auto 14px;background:var(--ink);color:#fff;border-radius:14px;padding:16px 20px;font-size:16px;line-height:1.45}
   .qask .who{font-family:var(--mono);font-size:11px;color:#cfcac6;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
@@ -294,6 +313,42 @@
   </div>
 </section>
 
+<!-- YOUR NEXT WINNER -->
+<section id="winner">
+  <div class="wrap">
+    <span class="eyebrow">Your next winner, faster</span>
+    <h2 style="margin-top:14px">Ask in ChatGPT. Get the angle to test, word for word.</h2>
+    <p class="muted" style="margin-top:14px;max-width:620px">Not insights. Orcool ranks what's proven in your competitors' live ads and hands you the hook to run.</p>
+
+    <div class="wgpt">
+      <div class="wbar"><span>ChatGPT</span> <span class="mdl">· with Orcool</span></div>
+      <div class="wthread">
+        <div class="wu"><div class="wbub">Orcool, in my category: which angle has run longest and spawned the most variants? Rank the proven winners, then give me the single winning hook word for word, plus a few variants and the bar for what "holds in spend" means.</div></div>
+        <div class="wa">
+          <div class="wav"><img src="orcool-mark-icon.png" alt=""></div>
+          <div class="wbody">
+            <div class="who">Orcool</div>
+            <h4>Proven engine</h4>
+            <p>Specific mental struggle, then immediate relief. The longest-running, most-varied structure in your category: most of the competitor ads, March to June, kept fresh.</p>
+            <h4>The breakout to test now</h4>
+            <p>A mechanism a category leader is scaling hard: <em>"a 60-second sound that resets your nervous system."</em> About 12 of 28 ads over three months, many variants. That spread means a scaling winner, not a fluke.</p>
+            <h4>Hook to test, word for word</h4>
+            <blockquote>"There's a 60-second sound trick that quiets a racing mind before bed. Most people have never tried it."</blockquote>
+            <h4>Two of four variants</h4>
+            <ul>
+              <li>Pain-led: "If your brain won't switch off at night, start here."</li>
+              <li>Curiosity: "There's a 60-second audio trick that settles a racing mind. Here's what it does."</li>
+            </ul>
+            <h4>The bar</h4>
+            <p>A winner clears your target CPA and survives a budget step-up without CPA blowing out. Not cheap clicks, conversions that hold. The asset is the repeatable engine, not one ad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;margin:16px auto 0;max-width:620px">This run came back in ChatGPT, on a free plan.</p>
+  </div>
+</section>
+
 <!-- CONNECT (mirrors the live /profile MCP setup) -->
 <section class="dark" id="connect" style="padding-top:0">
   <div class="wrap">
@@ -379,6 +434,11 @@ REVIEWS:
     </details>
 
     <div class="lab">More you can ask, once you're set up</div>
+    <div class="qbox">
+      <button class="copy" data-c="Orcool, in my category: which angle has run longest and spawned the most variants? Rank the proven winners by evidence, then give me the single winning hook word for word, four variants, and a simple test plan with the KPI bar and what 'holds in spend' means.">Copy</button>
+      <div class="ql">Find your next winner</div>
+      <p>Which angle has run longest and spawned the most variants? Rank the proven winners and give me the hook to test first, with variants and a test plan.</p>
+    </div>
     <div class="qbox">
       <button class="copy" data-c="What's trending in my market right now, and which hook is worth testing this week?">Copy</button>
       <div class="ql">Trends</div>
